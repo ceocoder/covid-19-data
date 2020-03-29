@@ -1,8 +1,9 @@
+steps:
 ## update counties table
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: 'bq'
-  args: ['load', '--source_format=CSV', '--replace=true', '--autodetect covid-19-data-nytimes:rawdata.us-counties', 'us-counties.csv']
+  args: ['load', '--source_format=CSV', '--replace=true', '--autodetect', 'covid-19-data-nytimes:rawdata.us-counties', 'us-counties.csv']
 ## update states table
 - name: gcr.io/cloud-builders/gcloud
   entrypoint: 'bq'
-  args: ['load', '--source_format=CSV', '--replace=true', '--autodetect covid-19-data-nytimes:rawdata.us-states', 'us-states.csv']
+  args: ['load', '--source_format=CSV', '--replace=true', '--autodetect', 'covid-19-data-nytimes:rawdata.us-states', 'us-states.csv']
