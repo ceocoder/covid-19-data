@@ -1,3 +1,15 @@
+#
+# NYTimes COVID-19 Public Dataset hosted on
+#
+# https://github.com/nytimes/covid-19-data
+#
+# it is mirrored to my github fork at
+#
+# https://github.com/ceocoder/covid-19-data using Github Actions here - https://github.com/ceocoder/covid-19-data/blob/master/.github/workflows/main.yml
+#
+# Synced to a Cloud Source repository that triggers a Cloud Build workflow here
+# https://github.com/ceocoder/covid-19-data/blob/master/cloudbuild.yaml
+#
 steps:
 ## update counties table
 - name: gcr.io/cloud-builders/gcloud
